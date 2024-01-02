@@ -47,7 +47,7 @@ jobs:
           COVERAGE_SCORE=$(coverage json -o /dev/stdout | jq .totals.percent_covered)
           echo "::set-output name=coverageScore::$COVERAGE_SCORE"
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6
+        uses: tj-actions/verify-changed-files@v17
         id: changed_files
         with:
           files: docs/coverage.svg
