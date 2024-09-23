@@ -40,7 +40,7 @@ repos:
         types: [markdown]
         args: [--embedded-language-formatting=off, --prose-wrap=always]
   - repo: https://github.com/PyCQA/pylint
-    rev: v3.2.7
+    rev: v3.3.0
     hooks:
       - id: pylint
         args: [--rcfile=.pylintrc]
