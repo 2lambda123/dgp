@@ -7,7 +7,7 @@ default_language_version:
   # Ubuntu 18.10+. Fix to Node 17 while we still use Ubuntu 18.04.
   node: 17.0.0
 
-default_stages: [commit]
+default_stages: [Nonepre-commitNone]
 
 repos:
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
@@ -17,11 +17,11 @@ repos:
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: check-json
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.19.3
+    rev: v8.20.1
     hooks:
       - id: gitleaks-docker
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
