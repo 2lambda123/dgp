@@ -57,7 +57,7 @@ repos:
     hooks:
       - id: yamllint
   - repo: https://github.com/google/yapf
-    rev: v0.40.2
+    rev: v0.43.0
     hooks:
       - id: yapf
         # pre-commit requires that we split args at whitespce boundaries.
